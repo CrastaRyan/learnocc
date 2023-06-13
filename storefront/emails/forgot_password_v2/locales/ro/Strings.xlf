@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<xliff version="1.0">
+   <file original="Strings.xlf" source-language="en" product-name="cloudcommerce" product-version="1.0" datatype="x-oracle-cloud-notification" target-language="ro-RO">
+      <body>
+         <trans-unit id="PASSWORD_RESET_SUBJECT">
+            <source>{0} Password Reset</source>
+            <target>Resetare parolă {0}</target>
+         </trans-unit>
+         <trans-unit id="ACCOUNT_REG_SUBJECT">
+            <source>{0} Account Registration</source>
+            <target>{0} Înregistrare cont</target>
+         </trans-unit>
+         <trans-unit id="PASSWORD_RESET_LINE_1">
+            <source>Please navigate to this page where you can reset your password: </source>
+            <target>Navigaţi la această pagină, unde vă puteţi reseta parola: </target>
+         </trans-unit>
+         <trans-unit id="ACCOUNT_EXIST_LINE">
+            <source>Account already exists for this email address: </source>
+            <target>Există deja un cont pt. această adresă de e-mail:</target>
+         </trans-unit>
+         <trans-unit id="PASSWORD_RESET_LINE_2">
+            <source>The next time you log in to your account, you will be asked to create a password of your own choosing.</source>
+            <target>La următoarea conectare la cont, vi se va solicita să creaţi o parolă proprie.</target>
+         </trans-unit>
+         <trans-unit id="PASSWORD_RESET_SALUTATION">
+            <source>Dear {0},</source>
+            <target>Stimată/Stimate {0},</target>
+         </trans-unit>
+         <trans-unit id="PASSWORD_RESET_SENT_SIGNATURE_TEXT">
+            <source>This is an automatically generated e-mail. Please do not reply.</source>
+            <target>Acesta este un e-mail generat automat, la care nu trebuie să răspundeţi.</target>
+         </trans-unit>
+      </body>
+   </file>
+</xliff>

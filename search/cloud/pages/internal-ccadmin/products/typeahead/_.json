@@ -1,0 +1,32 @@
+{
+  "contentType" : "Page",
+  "ecr:type" : "page",
+  "contentItem" : {
+    "@name" : "CC Admin Typeahead Service",
+    "@type" : "TypeaheadService",
+    "@appFilterState" : {
+      "@type" : "FilterState",
+      "recordFilters" : [ "product.active:1", "sku.active:1" ],
+      "rollupKey" : "sku.listingId",
+      "typeAhead" : true
+    },
+    "resultsList" : {
+      "@type" : "ResultsList",
+      "relRankStrategy" : "maxfield,static(product.displayName),static(sku.listingOptionIndex)",
+      "recordsPerPage" : "250",
+      "recommendationServiceConfigRef" : "",
+      "fieldNames" : [ "sku.listingId", "sku.repositoryId", "product.repositoryId", "product.displayName", "product.thumbImageURLs", "product.primaryThumbImageURL" ],
+      "sortOption" : {
+        "label" : "Product Name",
+        "sorts" : [ {
+          "key" : "product.displayName",
+          "descending" : "false"
+        } ]
+      },
+      "subRecordFieldNames" : [ ]
+    }
+  },
+  "ecr:createDate" : "2021-04-17T20:35:55.177780Z",
+  "ecr:lastModifiedBy" : "admin",
+  "ecr:lastModified" : "2021-04-17T20:35:55.177780Z"
+}

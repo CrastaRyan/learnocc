@@ -1,0 +1,33 @@
+{
+  "ecr:type" : "precedence-rules-owner-folder",
+  "ecr:createDate" : "2021-04-17T20:35:55.179812Z",
+  "ecr:lastModifiedBy" : "admin",
+  "ecr:lastModified" : "2021-04-17T20:35:55.179812Z",
+  "HideOnSale" : {
+    "targetDimension" : "sku.analytics.onSale",
+    "isEnabled" : true,
+    "triggerDimension" : "gs.nullDimension",
+    "ecr:type" : "precedence-rule",
+    "ecr:createDate" : "2021-04-17T20:35:55.180296Z",
+    "ecr:lastModifiedBy" : "admin",
+    "ecr:lastModified" : "2021-04-17T20:35:55.180296Z"
+  },
+  "HideProductType" : {
+    "targetDimension" : "product.analytics.productType",
+    "isEnabled" : true,
+    "triggerDimension" : "gs.nullDimension",
+    "ecr:type" : "precedence-rule",
+    "ecr:createDate" : "2021-04-17T20:35:55.180837Z",
+    "ecr:lastModifiedBy" : "admin",
+    "ecr:lastModified" : "2021-04-17T20:35:55.180837Z"
+  },
+  "HideAvailabilityStatus" : {
+    "targetDimension" : "sku.analytics.availabilityStatus",
+    "isEnabled" : true,
+    "triggerDimension" : "gs.nullDimension",
+    "ecr:type" : "precedence-rule",
+    "ecr:createDate" : "2021-04-17T20:35:55.181187Z",
+    "ecr:lastModifiedBy" : "admin",
+    "ecr:lastModified" : "2021-04-17T20:35:55.181187Z"
+  }
+}

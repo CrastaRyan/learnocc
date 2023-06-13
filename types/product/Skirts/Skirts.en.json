@@ -1,0 +1,63 @@
+{
+  "skuProperties": [],
+  "shopperInputs": [
+    {
+      "values": [],
+      "name": "skirt_model",
+      "label": "Model",
+      "id": "skirt_model",
+      "promptText": "Type the skirt model",
+      "type": "shortText",
+      "required": false
+    },
+    {
+      "values": [],
+      "name": "fabric_skirt",
+      "label": "Fabric",
+      "id": "fabric_skirt",
+      "promptText": "Type the fabric of the skirt",
+      "type": "shortText",
+      "required": false
+    }
+  ],
+  "displayName": "Skirts",
+  "count": 0,
+  "id": "Skirts",
+  "variants": [],
+  "specifications": [
+    {
+      "itemType": "Skirts",
+      "hidden": false,
+      "length": 1000,
+      "variantBasedDisplay": false,
+      "label": "Model",
+      "type": "shortText",
+      "required": true,
+      "searchable": true,
+      "writable": true,
+      "internalOnly": false,
+      "default": "Type the model of the skirt",
+      "listingVariant": false,
+      "localizable": false,
+      "textSearchable": true,
+      "id": "model_skirt",
+      "dimension": true,
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "listingVariant",
+        "hidden",
+        "variantBasedDisplay",
+        "textSearchable",
+        "label",
+        "dimension",
+        "required",
+        "searchable",
+        "order",
+        "multiSelect"
+      ],
+      "order": null,
+      "multiSelect": true
+    }
+  ]
+}

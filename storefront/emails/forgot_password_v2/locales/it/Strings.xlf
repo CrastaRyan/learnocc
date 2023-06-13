@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<xliff version="1.0">
+   <file original="Strings.xlf" source-language="en" product-name="cloudcommerce" product-version="1.0" datatype="x-oracle-cloud-notification" target-language="it-IT">
+      <body>
+         <trans-unit id="PASSWORD_RESET_SUBJECT">
+            <source>{0} Password Reset</source>
+            <target>Reimpostazione password di {0}</target>
+         </trans-unit>
+         <trans-unit id="ACCOUNT_REG_SUBJECT">
+            <source>{0} Account Registration</source>
+            <target>Registrazione account {0}</target>
+         </trans-unit>
+         <trans-unit id="PASSWORD_RESET_LINE_1">
+            <source>Please navigate to this page where you can reset your password: </source>
+            <target>Passare a questa pagina per reimpostare la password: </target>
+         </trans-unit>
+         <trans-unit id="ACCOUNT_EXIST_LINE">
+            <source>Account already exists for this email address: </source>
+            <target>Esiste già un account per questo indirizzo e-mail: </target>
+         </trans-unit>
+         <trans-unit id="PASSWORD_RESET_LINE_2">
+            <source>The next time you log in to your account, you will be asked to create a password of your own choosing.</source>
+            <target>Al prossimo accesso all'account, verrà richiesto di creare una password di propria scelta.</target>
+         </trans-unit>
+         <trans-unit id="PASSWORD_RESET_SALUTATION">
+            <source>Dear {0},</source>
+            <target>Gentile {0},</target>
+         </trans-unit>
+         <trans-unit id="PASSWORD_RESET_SENT_SIGNATURE_TEXT">
+            <source>This is an automatically generated e-mail. Please do not reply.</source>
+            <target>E-mail generata automaticamente. Non rispondere.</target>
+         </trans-unit>
+      </body>
+   </file>
+</xliff>

@@ -1,0 +1,32 @@
+<!-- oeA01Rafa -->
+<div id="oeA01Rafa">
+    <div class="brands-container">
+        <div> 
+            <span class="span1"> our </span> <span> brands </span> 
+        </div> <!-- Use this div to break the content propely-->  
+        <!--
+            Using <strong> isn't good enough to make the word OUR look like the one
+            in the assignment. So I'm gonna make it with CSS.
+            Also, I could write everything in upper case from the biggining,
+            instead of transforming it with CSS. In a bigger page, maybe that could take time
+            to process. In this case, tho, it's pretty much the same.
+        -->
+        <!-- Foreach is used here to bind the content of each (what a surprise) element
+            of an iterable, here, the array brandsarr.
+        -->
+        <div class="brand" data-bind="foreach: $data.brandsarr">
+            <!-- <span data-bind="text : title"> </span> -->
+            <!-- <img data-bind="attr:{src: url}" /> -->
+           <!-- Should I use a span here around the image tag?-->
+           <!-- <div class="col-xs-3">  --> <!-- This would put the images side by side. Use flexbox instead. -->
+                <div class="img-container"> 
+                    <img data-bind="ccResizeImage: {
+                    source: '/file/' + url,
+                    alt:title,
+                    errorSrc:'images/noImage.png',
+                    errorAlt:'No Image Found'}" />
+                </div>               
+            <!-- </div> -->
+        </div>  
+    </div> 
+</div>

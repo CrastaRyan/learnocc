@@ -1,0 +1,78 @@
+/* ---------------------------------------------------------------------- */
+/*  OE Generic Widget Styles
+/* ---------------------------------------------------------------------- */
+
+// :root{
+//   --test: red;
+// }
+
+#oeES6Widget1 {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: black;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.05) 98%, rgba(0, 0, 0, 0.1) 100%);
+  .head {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 180px 30px 180px;
+    .headLeft {
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      text-transform: uppercase;
+      padding-right: 30px;
+      .title1 {
+        font-weight: bolder;
+        font-size: 25px;
+      }
+      .title2 {
+        font-weight: lighter;
+        font-size: 24px;
+      }
+    }
+    .bar {
+      border-left: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    .headRight {
+      padding-left: 30px;
+      justify-content: left;
+      p {
+        font-size: 12px;
+        text-align: justify;
+      }
+    }
+  }
+  .menuContainer {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    .imgContainerContainer {
+      overflow: hidden;
+      position: relative;
+      flex: 25%;
+      .imgContainer {
+        &:hover {
+          transform: scale(1.2);
+        }
+        img {
+          width: 100%;
+        }
+        .text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          color: white;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.3);
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: bolder;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}

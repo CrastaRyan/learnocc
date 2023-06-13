@@ -1,0 +1,61 @@
+/* ---------------------------------------------------------------------- */
+/*  OE Generic Widget Styles                                              */
+/* ---------------------------------------------------------------------- */
+#oeA01Rafa {
+    .brands-container{       
+        //border: 1px solid red;
+        //The border is just for helping me see the overall position of stuff.
+        background-color: black;
+        text-transform: uppercase;
+        color : white; //Reffers to the color of any text inside this container.
+        padding: 20px 200px 100px 200px; //Comment this and you will understand.
+        .span1{
+            font-weight: bolder;
+        }
+         /*
+                Bellow I change the position of the the white rectangles.
+        */
+        .brand{
+            //border: 1px solid red;
+            display: flex;            
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch; 
+            gap: 10px; //Instead of using margin on the wrapper itself.
+            //(Gap applies only in between the items, not to the margins).
+            
+            /*
+                Bellow I change the propereties of the white rectangles themselves.
+                I may as well treat it as text. So I can menage, for example, the 
+                line height and that will change the position of the image related to
+                the bottom of the wrapper.
+                I don't actually like this. Looks pretty much like gambiarra. Even more
+                when I compare to the way I treated to position of the wrappers themselves.
+            */
+            .img-container{
+                //border: 2px solid purple;            
+                background-color: white;
+                border-radius: 8px 8px 8px 8px;                
+                margin-top: 15px;
+                /*
+                    Bellow I change the position of the elements inside the rectangles.
+                    The div bellow is created by occ-tools itself. I needed to inspect 
+                    the elements in the page to find it out. 
+                    Trying to align the elements in the above container wouldn't do the trick.
+                */
+                div{
+                    //border: 2px solid purple;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center; 
+                    line-height: 100px;
+                    img{
+                        width: 80%;
+                    }
+                }                
+            }            
+        }
+    }
+}
+
+//(SERCH) Bootstrap (SERCH)

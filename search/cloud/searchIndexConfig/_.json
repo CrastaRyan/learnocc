@@ -1,0 +1,12 @@
+{
+  "defaultLocale" : "en",
+  "locales" : [ ],
+  "spellingDictMaxWordLength" : 16,
+  "spellingDictMinNumWordOccurrences" : 4,
+  "spellingDictMinWordLength" : 3,
+  "ecr:createDate" : "2021-04-17T20:35:55.188819Z",
+  "isWildcardEnabledInDimensionSearch" : true,
+  "ecr:type" : "search-index-config",
+  "ecr:lastModifiedBy" : "interserver",
+  "ecr:lastModified" : "2021-09-23T16:48:07.806316Z"
+}

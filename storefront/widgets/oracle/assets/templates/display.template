@@ -1,0 +1,215 @@
+<div id="CC-assets" class="CC-services">
+
+  <div class="row">
+    <div class="col-sm-7">
+      <h2 data-bind="widgetLocaleText:'myAccount'"></h2>
+    </div>
+    <div class="col-sm-5 text-right">
+      <a  href="#" data-bind="
+        click: user().validatePrivilagePageRequest.bind(user()), 
+        ccNavigation: 'prevent',
+        ccLink: 'profile',
+        widgetLocaleText:'backToMyAccount'"></a>
+    </div>
+  </div>
+  
+  <span class="CC-assets-legend" data-bind="widgetLocaleText:'services'"></span>
+  
+  <table id="CC-assets-results" class="table table-striped" data-bind="widgetLocaleText:{value:'assetTableSummary', attr:'summary'}">
+    <thead>
+      <tr>
+        <th scope="col">
+          <span data-bind="widgetLocaleText:'assetKey'"></span>
+        </th>
+        <th scope="col">
+          <span data-bind="widgetLocaleText:'serviceId'"></span>
+        </th>
+        <th scope="col" class="hidden-xs">
+          <span data-bind="widgetLocaleText:'serviceAccountId'"></span>
+        </th>
+        <th scope="col" class="text-center hidden-xs hidden-sm">
+          <span data-bind="widgetLocaleText:'moreInfo'"></span>
+        </th>
+        <th scope="col" class="hidden-xs">
+          <span data-bind="widgetLocaleText:'quantity'"></span>
+        </th>
+        <th scope="col" class="hidden-xs hidden-sm">
+          <span data-bind="widgetLocaleText:'price'"></span>
+        </th>
+        <th scope="col"><span class="sr-only" data-bind="widgetLocaleText:'assetDetailsLink'"></span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- ko foreach: $data.assets -->
+        <tr>
+          <th scope="row">
+            <span data-bind="text: $data.assetKey"></span>
+          </th>
+          <th scope="row">
+            <span data-bind="text: $data.serviceId"></span>
+          </th>
+          <td class="hidden-xs">
+            <span data-bind="text: $data.serviceAccountId"></span>
+          </td>
+          <td class="text-center">
+            <span data-bind="widgetLocaleText: 'status'" class="label-text"></span>
+            <span data-bind="text: $data.status.displayValue"></span></br>
+            <span data-bind="widgetLocaleText: 'dateAdded'" class="label-text"></span>
+            <span data-bind="
+              ccDate: {
+                date: $data.dateAdded,
+                returnedDate: 'medium'
+              }"></span></br>
+              <span data-bind="widgetLocaleText: 'dateModified'" class="label-text"></span>
+              <span data-bind="
+              ccDate: {
+                date: $data.dateModified,
+                returnedDate: 'medium'
+              }"></span></br>
+              <!-- ko if: $data.upgradeOptions && $data.upgradeOptions.length > 0 -->
+                </br>
+                <span data-bind="widgetLocaleText: 'upgradesAvailable'" class="label-text"></span></br>
+                <!-- ko foreach : $data.upgradeOptions -->
+                  <!-- Quick View -->
+                    <div data-bind="setContextVariable:{name:'product', value: $data}" class="quickViewElement">
+                      <!-- ko with: $parents[1] -->
+                        <div class="quick-view hidden-xs hidden-sm">
+                          <a href="#" data-bind="click: $data.handleQuickViewClick.bind($product, true),
+                          attr: { title: $product.displayName },
+                                        text: $product.displayName" class="cc-product-quickview"></a>
+                        </div>
+                      <!-- /ko -->
+                    </div>
+                <!-- /ko -->
+              <!-- /ko -->
+          </td>
+          <td class="hidden-xs">
+            <span data-bind="text: $data.quantity"></span>
+          </td>
+          <td class="hidden-xs hidden-sm">
+            <span data-bind="
+              currency: {
+                price: $data.price.value,
+                currencyObj: $parents[0].site().currency
+              }"></span>
+          </td>
+          <td class="text-right">
+            <a href="#" class="cc-button-primary" data-bind="
+              ccLink: $data,
+              widgetLocaleText:'details'"></a>
+          </td>
+        </tr>
+      <!-- /ko -->
+      <!-- ko ifnot: ($data.assets() && $data.assets().length > 0) -->
+        <tr>
+          <td colspan="9">
+            <span data-bind="widgetLocaleText: 'noItemsToDisplay'"></span>
+          </td>
+        </tr>
+      <!-- /ko -->
+    </tbody>
+  </table>
+
+  <div class="text-right" data-bind="visible: isPagingRequired">
+
+    <div class="btn-group">
+        
+        <button class="btn btn-default"
+          data-bind="disable: onFirstPage,
+                     click: goToPage.bind( $data, 1 )">
+          <span class="sr-only" data-bind="widgetLocaleText:'goToFirstPage'"></span>
+          &lt;&lt;
+        </button>
+
+        <button class="btn btn-default"
+          data-bind="disable: onFirstPage,
+                     click: goToPage.bind( $data, previousPage() )">
+          <span class="sr-only" data-bind="widgetLocaleText:'goToPreviousPage'"></span>
+          &lt;
+        </button>
+      
+        <!-- ko foreach: pageLinks -->
+          <button class="btn btn-default hidden-xs"
+            data-bind="css: { active: $data.active },
+                       click: $parent.goToPage.bind( $data, $data.pageNumber )">
+            <span class="sr-only" data-bind="widgetLocaleText:'goToPage'"></span>
+            <span data-bind="text: $data.pageNumber"></span>
+          </button>
+        <!-- /ko -->
+
+        <button class="btn btn-default"
+          data-bind="disable: onLastPage,
+                     click: goToPage.bind( $data, nextPage() )">
+          <span class="sr-only" data-bind="widgetLocaleText:'goToNextPage'"></span>
+          &gt;
+        </button>
+        
+        <button class="btn btn-default"
+          data-bind="disable: onLastPage,
+                     visible: shouldShowGoToLastPage,
+                     click: goToPage.bind( $data, totalPages() )">
+          <span class="sr-only" data-bind="widgetLocaleText:'goToLastPage'"></span>
+          &gt;&gt;
+        </button>
+      
+    </div>
+
+  </div>
+
+  <div data-bind="onRender: goToPage(1)"></div>
+
+</div>
+
+<!-- ko if: $data.productDetails -->
+  <div class="modal fade in" id="cc-upgrade-asset-display" tabindex="-1" role="dialog">
+    <div class="modal-dialog cc-config-modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a href="#" class="close" data-dismiss="modal" aria-label="Close">×</a>
+        </div>
+        <!-- ko with: $data.productDetails() -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="oc-panel panel-1 col-md-6">
+              <div class="cc-image-area">
+                <div id="image-viewer" data-bind="visible : primaryFullImageURL">
+                  <div class="cc-viewer-pane hidden-xs hidden-sm">
+                    <div id="cc-image-viewer" data-bind="imageZoom: {
+                      magnifierPercent: 0.35,
+                      magnifierEnabled: false,
+                      smallImageUrl: mediumImageURLs[0],
+                      fullImageUrl: fullImageURLs[0],
+                      imageMetadataDefault: {alttext: (productImagesMetadata[0] && productImagesMetadata[0].altText) ? productImagesMetadata[0].altText : displayName,
+                                            title:(productImagesMetadata[0] && productImagesMetadata[0].titleText) ? productImagesMetadata[0].titleText : displayName},
+                      imageMetadatas: productImagesMetadata,
+                      spinnerDelay: 200,
+                      smallImageUrls: mediumImageURLs,
+                      fullImageUrls: fullImageURLs,
+                      replaceImageAtIndex : false,
+                      errorImageUrl: '/img/no-image.jpg'}">
+
+                       <img class="ccz-small img-responsive"  data-bind="ccResizeImage: {
+                        isSrcSetEnabled : true,
+                        source:mediumImageURLs[0] , 
+                        alt: (productImagesMetadata[0] && productImagesMetadata[0].altText) ? productImagesMetadata[0].altText : displayName,
+                        title: (productImagesMetadata[0] && productImagesMetadata[0].titleText) ? productImagesMetadata[0].titleText : displayName,  
+                        errorSrc:'/img/no-image.jpg', 
+                        errorAlt:'No Image Found'}">
+                      </img>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="oc-panel panel-2 col-md-6">
+              <h1 data-bind="text: displayName" id="CC-prodDetails-displayName"></h1>
+              <div data-bind="text: description" id="CC-prodDetails-description"></div>
+            </div>
+          </div>
+        </div>
+        <!-- /ko -->
+      </div>
+    </div>
+  </div>
+<!-- /ko -->

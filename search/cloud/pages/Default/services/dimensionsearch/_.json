@@ -1,0 +1,15 @@
+{
+  "contentType" : "Page",
+  "ecr:type" : "page",
+  "contentItem" : {
+    "@type" : "DimensionSearchService",
+    "@name" : "Dimension Search Service",
+    "dimensionSearchResults" : {
+      "@type" : "DimensionSearchResults"
+    },
+    "redirectCollection" : ""
+  },
+  "ecr:createDate" : "2021-04-17T20:35:55.173458Z",
+  "ecr:lastModifiedBy" : "admin",
+  "ecr:lastModified" : "2021-04-17T20:35:55.173458Z"
+}

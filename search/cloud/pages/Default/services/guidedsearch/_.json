@@ -1,0 +1,48 @@
+{
+  "contentType" : "Page",
+  "ecr:type" : "page",
+  "contentItem" : {
+    "@name" : "Guided Search Service",
+    "@type" : "GuidedSearchService",
+    "@appFilterState" : {
+      "@type" : "FilterState",
+      "recordFilters" : [ "product.active:1", "sku.active:1", "product.catalogId:${catalogId}" ],
+      "hiddenNavigationFilter" : "${catalogDimensionValueId}",
+      "rollupKey" : "sku.listingId"
+    },
+    "navigation" : {
+      "@type" : "NavigationContainer",
+      "contentPaths" : [ "/content/facets" ]
+    },
+    "breadcrumbs" : {
+      "@type" : "Breadcrumbs"
+    },
+    "resultsList" : {
+      "@type" : "ResultsList",
+      "rankingRules" : {
+        "systemRulePaths" : [ "/content/system/rankingRules" ],
+        "systemRuleLimit" : 10,
+        "merchRulePaths" : [ "/content/rankingRules" ]
+      }
+    },
+    "searchAdjustments" : {
+      "@type" : "SearchAdjustments"
+    },
+    "dimensionSearchResults" : {
+      "@type" : "DimensionSearchResults"
+    },
+    "additionalContent" : {
+      "ruleLimit" : 1,
+      "@type" : "ContentSlot",
+      "contentPaths" : [ "/content/additionalContent" ]
+    },
+    "dynamicContent" : {
+      "ruleLimit" : 1,
+      "@type" : "ContentSlot",
+      "contentPaths" : [ "/content/media" ]
+    }
+  },
+  "ecr:createDate" : "2021-04-17T20:35:55.174428Z",
+  "ecr:lastModifiedBy" : "admin",
+  "ecr:lastModified" : "2021-04-17T20:35:55.174428Z"
+}

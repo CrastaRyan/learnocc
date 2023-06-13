@@ -1,0 +1,16 @@
+{
+  "contentType" : "Page",
+  "ecr:type" : "page",
+  "contentItem" : {
+    "@type" : "ContentInclude",
+    "@appFilterState" : {
+      "@type" : "FilterState",
+      "recordFilters" : [ "product.active:1", "sku.active:1", "product.catalogId:${catalogId}" ],
+      "rollupKey" : "sku.listingId"
+    },
+    "contentUri" : "/pages/Default/services/guidedsearch"
+  },
+  "ecr:createDate" : "2021-04-17T20:35:55.172419Z",
+  "ecr:lastModifiedBy" : "admin",
+  "ecr:lastModified" : "2021-04-17T20:35:55.172419Z"
+}

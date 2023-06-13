@@ -1,0 +1,33 @@
+<!-- oeES6Widget -->
+<div id="oeES6Widget1">
+  <div class="head">
+    <div class="headLeft">
+      <span class="title1">GreenBall</span>
+      <span class="title2">Products</span>
+    </div>
+    <div class="bar"></div>
+    <div class="headRight">
+      <p>
+        For over forty years we've dedicated ourselves to meeting our custumer's needs and demands. By offering a wide selection of tire productsaccompanied
+        with efficient and friendly service, Greenball has proven to be a reliable business partner for custumers at the retail, wholesale and OEM levels.
+      </p>
+    </div>
+  </div>
+
+  <div class="menuContainer" data-bind="foreach: $data.menuArr">
+    <div class="imgContainerContainer">
+      <a data-bind="click: openTab.bind($data)">
+      <div class="imgContainer">
+        <span class="text" data-bind="text: title"> </span>        
+          <img
+            data-bind="ccResizeImage: {
+                                  source: imagePath,
+                                  alt:title,
+                                  errorSrc:'images/noImage.png',
+                                  errorAlt:'No Image Found'}"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

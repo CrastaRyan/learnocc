@@ -1,0 +1,23 @@
+{
+  "contentType" : "Page",
+  "ecr:type" : "page",
+  "contentItem" : {
+    "@name" : "Typeahead Service",
+    "@type" : "TypeaheadService",
+    "@appFilterState" : {
+      "@type" : "FilterState",
+      "typeAhead" : true,
+      "recordFilters" : [ "product.active:1", "sku.active:1", "product.catalogId:${catalogId}" ],
+      "hiddenNavigationFilter" : "${catalogDimensionValueId}",
+      "rollupKey" : "sku.listingId"
+    },
+    "resultsList" : {
+      "recordsPerPage" : "5",
+      "@type" : "ResultsList",
+      "relRankStrategy" : "maxfield,static(product.displayName),static(sku.listingOptionIndex)"
+    }
+  },
+  "ecr:createDate" : "2021-04-17T20:35:55.175698Z",
+  "ecr:lastModifiedBy" : "admin",
+  "ecr:lastModified" : "2021-04-17T20:35:55.175698Z"
+}

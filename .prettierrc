@@ -1,0 +1,19 @@
+{
+  "printWidth": 160,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "overrides": [
+    {
+      "files": "*.template",
+      "options": {
+        "parser": "html"
+      }
+    },
+    {
+      "files": "*.ftl",
+      "options": {
+        "parser": "html"
+      }
+    }
+  ]
+}

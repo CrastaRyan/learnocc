@@ -1,0 +1,552 @@
+{
+  "propertiesOrder": [
+    "upsell",
+    "global",
+    "displayName",
+    "isSiteRestricted",
+    "filterForQualifierActedAsQualifier",
+    "filterForQualifierDiscountedByAny",
+    "template",
+    "giveToAnonymousProfiles",
+    "filterForQualifierOnSale",
+    "beginUsable",
+    "startDate",
+    "filterForQualifierZeroPrices",
+    "endDate",
+    "priority",
+    "endUsable",
+    "relativeExpiration",
+    "description",
+    "timeUntilExpire",
+    "filterForQualifierNegativePrices",
+    "maxUsesPerOrder",
+    "allowMultiple",
+    "uses",
+    "enabled",
+    "pmdlVersion",
+    "evaluationLimit",
+    "pmdlRule"
+  ],
+  "displayName": "Promotion",
+  "id": "promotion",
+  "specifications": [
+    {
+      "internalOnly": false,
+      "uiEditorType": "shortText",
+      "default": null,
+      "length": 254,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Template",
+      "id": "template",
+      "type": "shortText",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "checkbox",
+      "default": null,
+      "length": 1,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Items with Zero Prices",
+      "id": "filterForQualifierZeroPrices",
+      "type": "checkbox",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "date",
+      "default": null,
+      "length": 7,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Distribute through",
+      "id": "endDate",
+      "type": "date",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "shortText",
+      "default": null,
+      "length": 254,
+      "includeInDiscountInfoJson": false,
+      "localizable": true,
+      "label": "Promotion name",
+      "id": "displayName",
+      "type": "shortText",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label"
+      ],
+      "required": true,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "shortText",
+      "default": null,
+      "length": 4000000,
+      "includeInDiscountInfoJson": false,
+      "localizable": true,
+      "label": "Description",
+      "id": "description",
+      "type": "shortText",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "checkbox",
+      "default": false,
+      "length": 1,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Automatically apply to all orders",
+      "id": "global",
+      "type": "checkbox",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "date",
+      "default": null,
+      "length": 7,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Usage end date",
+      "id": "endUsable",
+      "type": "date",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "checkbox",
+      "default": true,
+      "length": 1,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Enabled",
+      "id": "enabled",
+      "type": "checkbox",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "checkbox",
+      "default": null,
+      "length": 1,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Items with Negative Prices",
+      "id": "filterForQualifierNegativePrices",
+      "type": "checkbox",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "checkbox",
+      "default": null,
+      "length": 165,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Site restrictions",
+      "id": "isSiteRestricted",
+      "type": "checkbox",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "checkbox",
+      "default": null,
+      "length": 1,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Items on Sale",
+      "id": "filterForQualifierOnSale",
+      "type": "checkbox",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "checkbox",
+      "default": null,
+      "length": 1,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Qualified Items (Any promotion)",
+      "id": "filterForQualifierActedAsQualifier",
+      "type": "checkbox",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "number",
+      "default": -1,
+      "length": 10,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Evaluation Limit",
+      "id": "evaluationLimit",
+      "type": "number",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "checkbox",
+      "default": true,
+      "length": 1,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Give to anonymous customers",
+      "id": "giveToAnonymousProfiles",
+      "type": "checkbox",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "number",
+      "default": null,
+      "length": 10,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Redeemable for",
+      "id": "timeUntilExpire",
+      "type": "number",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "date",
+      "default": null,
+      "length": 7,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Usage start date",
+      "id": "beginUsable",
+      "type": "date",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "number",
+      "default": 1,
+      "length": 10,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "PDML version",
+      "id": "pmdlVersion",
+      "type": "number",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "shortText",
+      "default": null,
+      "length": 0,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Condition and offer",
+      "id": "pmdlRule",
+      "type": "shortText",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "checkbox",
+      "default": true,
+      "length": 1,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Enable promotion upsells",
+      "id": "upsell",
+      "type": "checkbox",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "number",
+      "default": 1,
+      "length": 10,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Priority",
+      "id": "priority",
+      "type": "number",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label"
+      ],
+      "required": true,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "checkbox",
+      "default": null,
+      "length": 1,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Discounted Items (Any promotion)",
+      "id": "filterForQualifierDiscountedByAny",
+      "type": "checkbox",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "checkbox",
+      "default": false,
+      "length": 1,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Usage period",
+      "id": "relativeExpiration",
+      "type": "checkbox",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "checkbox",
+      "default": false,
+      "length": 1,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Give to a customer more than once",
+      "id": "allowMultiple",
+      "type": "checkbox",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "number",
+      "default": 1,
+      "length": 10,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Max uses per customer",
+      "id": "uses",
+      "type": "number",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "number",
+      "default": -1,
+      "length": 10,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "maxUsesPerOrder",
+      "id": "maxUsesPerOrder",
+      "type": "number",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    },
+    {
+      "internalOnly": false,
+      "uiEditorType": "date",
+      "default": null,
+      "length": 7,
+      "includeInDiscountInfoJson": false,
+      "localizable": false,
+      "label": "Distribute starting",
+      "id": "startDate",
+      "type": "date",
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "includeInDiscountInfoJson",
+        "label",
+        "required"
+      ],
+      "required": false,
+      "writable": true
+    }
+  ]
+}

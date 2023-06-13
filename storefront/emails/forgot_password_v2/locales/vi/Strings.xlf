@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<xliff version="1.0">
+   <file original="Strings.xlf" source-language="en" product-name="cloudcommerce" product-version="1.0" datatype="x-oracle-cloud-notification" target-language="vi-VN">
+      <body>
+         <trans-unit id="PASSWORD_RESET_SUBJECT">
+            <source>{0} Password Reset</source>
+            <target>Đặt lại mật khẩu {0}</target>
+         </trans-unit>
+         <trans-unit id="ACCOUNT_REG_SUBJECT">
+            <source>{0} Account Registration</source>
+            <target>Đăng ký tài khoản {0}</target>
+         </trans-unit>
+         <trans-unit id="PASSWORD_RESET_LINE_1">
+            <source>Please navigate to this page where you can reset your password: </source>
+            <target>Hãy điều hướng tới trang này để bạn có thể đặt lại mật khẩu của mình: </target>
+         </trans-unit>
+         <trans-unit id="ACCOUNT_EXIST_LINE">
+            <source>Account already exists for this email address: </source>
+            <target>Tài khoản đã tồn tại cho địa chỉ email này: </target>
+         </trans-unit>
+         <trans-unit id="PASSWORD_RESET_LINE_2">
+            <source>The next time you log in to your account, you will be asked to create a password of your own choosing.</source>
+            <target>Lần tới đăng nhập vào tài khoản, bạn sẽ được yêu cầu tạo một mật khẩu tự chọn.</target>
+         </trans-unit>
+         <trans-unit id="PASSWORD_RESET_SALUTATION">
+            <source>Dear {0},</source>
+            <target>Xin chào {0}!</target>
+         </trans-unit>
+         <trans-unit id="PASSWORD_RESET_SENT_SIGNATURE_TEXT">
+            <source>This is an automatically generated e-mail. Please do not reply.</source>
+            <target>Đây là email được tạo tự động. Vui lòng không trả lời email này.</target>
+         </trans-unit>
+      </body>
+   </file>
+</xliff>

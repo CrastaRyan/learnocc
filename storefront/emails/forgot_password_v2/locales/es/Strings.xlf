@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<xliff version="1.0">
+   <file original="Strings.xlf" source-language="en" product-name="cloudcommerce" product-version="1.0" datatype="x-oracle-cloud-notification" target-language="es-ES">
+      <body>
+         <trans-unit id="PASSWORD_RESET_SUBJECT">
+            <source>{0} Password Reset</source>
+            <target>Restablecimiento de contraseña de {0}</target>
+         </trans-unit>
+         <trans-unit id="ACCOUNT_REG_SUBJECT">
+            <source>{0} Account Registration</source>
+            <target>Registro de cuenta de {0}</target>
+         </trans-unit>
+         <trans-unit id="PASSWORD_RESET_LINE_1">
+            <source>Please navigate to this page where you can reset your password: </source>
+            <target>Acceda a esta página, en la que podrá restablecer la contraseña: </target>
+         </trans-unit>
+         <trans-unit id="ACCOUNT_EXIST_LINE">
+            <source>Account already exists for this email address: </source>
+            <target>Ya existe una cuenta para esta dirección de correo electrónico:</target>
+         </trans-unit>
+         <trans-unit id="PASSWORD_RESET_LINE_2">
+            <source>The next time you log in to your account, you will be asked to create a password of your own choosing.</source>
+            <target>La próxima vez que se conecte a su cuenta, se le pedirá que cree una contraseña de su propia elección.</target>
+         </trans-unit>
+         <trans-unit id="PASSWORD_RESET_SALUTATION">
+            <source>Dear {0},</source>
+            <target>Estimado/a {0}:</target>
+         </trans-unit>
+         <trans-unit id="PASSWORD_RESET_SENT_SIGNATURE_TEXT">
+            <source>This is an automatically generated e-mail. Please do not reply.</source>
+            <target>Este es un correo electrónico generado automáticamente. No responda.</target>
+         </trans-unit>
+      </body>
+   </file>
+</xliff>

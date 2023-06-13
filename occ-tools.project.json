@@ -1,0 +1,25 @@
+{
+  "name": "OCC Training",
+  "environments": [
+    {
+      "name": "dev",
+      "url": "https://asbx50c1admin-store.occa.ocs.oraclecloud.com"
+    },
+    {
+      "name": "dev-store",
+      "url": "https://asbx50c1dev-store.occa.ocs.oraclecloud.com"
+    },
+    {
+      "name": "c2tst",
+      "url": "https://p1747239c2tst-admin.occa.ocs.oraclecloud.com",
+      "store": "https://p1747239c2tst-store.occa.ocs.oraclecloud.com",
+      "dns": "https://shop-test2.motorolasolutions.com",
+      "local": "https://local.shop-test2.motorolasolutions.com",
+      "branch": "c2tst"
+    }
+  ],
+  "theme": {
+    "id": "100001",
+    "name": "Training theme"
+  }
+}

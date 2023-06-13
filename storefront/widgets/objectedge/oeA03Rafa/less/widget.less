@@ -1,0 +1,47 @@
+/* ---------------------------------------------------------------------- */
+/*  OE Generic Widget Styles
+/* ---------------------------------------------------------------------- */
+#oeES6Widget2 {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center; //This is what puts the items in the center over the x axis.
+  flex-direction: column;
+  padding: 25px 0px 25px 0px;
+  .menuHead {
+    text-align: center; //Not really necessary, but I don't know if it would not be overwritten in some circumstances in case it's not explicit.
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .menuItems {
+    width: 500px; //It's ok not make it totally responsive to changes in the size of the window for now. So make it fix.
+    height: 150px;
+    display: flex;
+    justify-content: center; //Align in x axis.
+    align-items: center; //Align in y axis.
+    gap: 6px;
+    .item {
+      //background-color: white; //So, on hover, the effect on the background is not visible here.
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      width: 100px; //Done it Arbitrary. Maybe I should put more thought on it, tho.
+      div {
+        width: 40px; //Arbitrary.
+        img {
+          width: 100%; //This is on purpose.
+        }
+      }
+      .itemText {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 10px;
+      }
+      &:hover {
+        //Use a shadow box generator.
+        -webkit-box-shadow: 0px 13px 27px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 13px 27px 0px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}

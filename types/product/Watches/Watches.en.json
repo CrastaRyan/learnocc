@@ -1,0 +1,60 @@
+{
+  "skuProperties": [],
+  "shopperInputs": [],
+  "displayName": "Watches",
+  "count": 0,
+  "id": "Watches",
+  "variants": [
+    {
+      "itemType": "sku-Watches",
+      "localizedValues": null,
+      "hidden": false,
+      "values": [
+        "Silver",
+        "Gold",
+        "Bronze",
+        "Navy",
+        "Red",
+        "Yellow",
+        "Light Blue",
+        "Burgundy",
+        "White",
+        "Green",
+        "Burnished Metal"
+      ],
+      "length": 19,
+      "variantBasedDisplay": false,
+      "label": "Color",
+      "type": "enumerated",
+      "required": false,
+      "searchable": true,
+      "writable": true,
+      "internalOnly": false,
+      "uiEditorType": null,
+      "default": null,
+      "listingVariant": true,
+      "propertyType": "variant",
+      "localizable": false,
+      "textSearchable": true,
+      "id": "x_watchcolor",
+      "dimension": true,
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "listingVariant",
+        "hidden",
+        "variantBasedDisplay",
+        "textSearchable",
+        "label",
+        "dimension",
+        "required",
+        "searchable",
+        "order",
+        "multiSelect"
+      ],
+      "order": null,
+      "multiSelect": true
+    }
+  ],
+  "specifications": []
+}

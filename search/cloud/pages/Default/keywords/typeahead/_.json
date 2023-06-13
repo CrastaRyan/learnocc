@@ -1,0 +1,21 @@
+{
+  "contentType" : "Page",
+  "ecr:type" : "page",
+  "contentItem" : {
+    "@name" : "Keyword Search Service",
+    "@type" : "KeywordSearchService",
+    "@appFilterState" : {
+      "@type" : "FilterState",
+      "typeAhead" : true,
+      "recordFilters" : [ "OR(record.collection:keywords,record.collection:internal-keywords)" ]
+    },
+    "resultsList" : {
+      "@type" : "ResultsList",
+      "relRankStrategy" : "static(keyword.score,descending)",
+      "fieldNames" : [ "record.id", "keyword.terms", "keyword.score" ]
+    }
+  },
+  "ecr:createDate" : "2021-04-17T20:35:55.171833Z",
+  "ecr:lastModifiedBy" : "admin",
+  "ecr:lastModified" : "2021-04-17T20:35:55.171833Z"
+}

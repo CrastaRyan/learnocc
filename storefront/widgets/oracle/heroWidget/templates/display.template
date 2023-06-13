@@ -1,0 +1,18 @@
+<div class="container-ratio">
+
+    <div class="container-inner">
+		   <p style="color:white;text-align:left;margin-left:130px"><b>OUR</b> BRANDS</p>
+        <a class="block">
+            <img src="https://asbx50c1dev-store.occa.ocs.oraclecloud.com/file/v3507334132066863346/general/centennial.png">
+        </a>
+        <a class="block">
+            <img src="https://asbx50c1dev-store.occa.ocs.oraclecloud.com/file/v7245695437200378725/general/gbc.png">
+        </a>
+        <a class="block">
+            <img src="https://asbx50c1dev-store.occa.ocs.oraclecloud.com/file/v7826614190435381895/general/greenball.png">
+        </a>
+		<a class="block">
+            <img src="https://asbx50c1dev-store.occa.ocs.oraclecloud.com/file/v4748348180017934208/general/kanati.png">
+        </a>
+    </div>
+</div>

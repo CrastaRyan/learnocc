@@ -1,0 +1,120 @@
+{
+  "skuProperties": [],
+  "shopperInputs": [
+    {
+      "values": [],
+      "name": "x_width",
+      "label": "Width",
+      "id": "x_width",
+      "promptText": null,
+      "type": "shortText",
+      "required": true
+    },
+    {
+      "values": [],
+      "name": "x_height",
+      "label": "Height",
+      "id": "x_height",
+      "promptText": null,
+      "type": "shortText",
+      "required": true
+    },
+    {
+      "values": [],
+      "name": "x_length",
+      "label": "Length",
+      "id": "x_length",
+      "promptText": null,
+      "type": "shortText",
+      "required": true
+    }
+  ],
+  "displayName": "Table",
+  "count": 2,
+  "id": "Table",
+  "variants": [],
+  "specifications": [
+    {
+      "itemType": "Table",
+      "localizedValues": null,
+      "hidden": false,
+      "values": [
+        "oval",
+        "rectangular",
+        "square"
+      ],
+      "length": 19,
+      "variantBasedDisplay": false,
+      "label": "Shape",
+      "type": "enumerated",
+      "required": false,
+      "searchable": false,
+      "writable": true,
+      "internalOnly": false,
+      "default": null,
+      "listingVariant": false,
+      "localizable": false,
+      "textSearchable": false,
+      "id": "x_shape",
+      "dimension": false,
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "listingVariant",
+        "hidden",
+        "variantBasedDisplay",
+        "textSearchable",
+        "label",
+        "dimension",
+        "required",
+        "searchable",
+        "order",
+        "multiSelect"
+      ],
+      "order": null,
+      "multiSelect": false
+    },
+    {
+      "itemType": "Table",
+      "localizedValues": null,
+      "hidden": false,
+      "values": [
+        "white",
+        "black",
+        "blue",
+        "red",
+        "green"
+      ],
+      "length": 19,
+      "variantBasedDisplay": false,
+      "label": "Color",
+      "type": "enumerated",
+      "required": false,
+      "searchable": false,
+      "writable": true,
+      "internalOnly": false,
+      "default": null,
+      "listingVariant": false,
+      "localizable": false,
+      "textSearchable": false,
+      "id": "x_color",
+      "dimension": false,
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "listingVariant",
+        "hidden",
+        "variantBasedDisplay",
+        "textSearchable",
+        "label",
+        "dimension",
+        "required",
+        "searchable",
+        "order",
+        "multiSelect"
+      ],
+      "order": null,
+      "multiSelect": false
+    }
+  ]
+}

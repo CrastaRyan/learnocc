@@ -1,0 +1,13 @@
+{
+  "name": "oe01DummyWidgetbyRyan",
+  "widgetType": "oe01DummyWidgetbyRyan",
+  "i18nresources": "oe01DummyWidgetbyRyan",
+  "javascript": "oe01DummyWidgetbyRyan",
+  "availableToAllPages": true,
+  "global": false,
+  "globalEnabled": false,
+  "version": 1,
+  "jsEditable": true,
+  "imports": [],
+  "config": {}
+}

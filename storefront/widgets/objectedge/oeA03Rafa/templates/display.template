@@ -1,0 +1,16 @@
+<!-- oeES6Widget -->
+<div id="oeES6Widget2">
+  <div class="menuHead">Shop By Category</div>
+  <div class="menuItems" data-bind="foreach: $data.imgArr">
+    <div class="item">
+      <img
+        data-bind="ccResizeImage: {
+                                      source: url,
+                                      alt:title,
+                                      errorSrc:'images/noImage.png',
+                                      errorAlt:'No Image Found'}"
+      />
+      <span class="itemText" data-bind="text: title"></span>
+    </div>
+  </div>
+</div>

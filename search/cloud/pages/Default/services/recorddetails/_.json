@@ -1,0 +1,15 @@
+{
+  "contentType" : "Page",
+  "ecr:type" : "page",
+  "contentItem" : {
+    "@type" : "RecordDetailsService",
+    "@name" : "Record Details Service",
+    "recordDetails" : {
+      "@type" : "ProductDetail"
+    },
+    "redirectCollection" : ""
+  },
+  "ecr:createDate" : "2021-04-17T20:35:55.175070Z",
+  "ecr:lastModifiedBy" : "admin",
+  "ecr:lastModified" : "2021-04-17T20:35:55.175070Z"
+}

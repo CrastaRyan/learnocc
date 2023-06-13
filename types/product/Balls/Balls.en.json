@@ -1,0 +1,65 @@
+{
+  "skuProperties": [],
+  "shopperInputs": [
+    {
+      "values": [
+        "white",
+        "black",
+        "gray",
+        "pink"
+      ],
+      "name": "x_color",
+      "label": "Color",
+      "id": "x_color",
+      "promptText": null,
+      "type": "enumerated",
+      "required": true
+    }
+  ],
+  "displayName": "Balls",
+  "count": 2,
+  "id": "Balls",
+  "variants": [],
+  "specifications": [
+    {
+      "itemType": "Balls",
+      "localizedValues": null,
+      "hidden": false,
+      "values": [
+        "soccer",
+        "baseball",
+        "basketball"
+      ],
+      "length": 19,
+      "variantBasedDisplay": false,
+      "label": "Sport",
+      "type": "enumerated",
+      "required": true,
+      "searchable": true,
+      "writable": true,
+      "internalOnly": false,
+      "default": "soccer",
+      "listingVariant": false,
+      "localizable": false,
+      "textSearchable": true,
+      "id": "x_sport",
+      "dimension": true,
+      "editableAttributes": [
+        "internalOnly",
+        "default",
+        "listingVariant",
+        "hidden",
+        "variantBasedDisplay",
+        "textSearchable",
+        "label",
+        "dimension",
+        "required",
+        "searchable",
+        "order",
+        "multiSelect"
+      ],
+      "order": null,
+      "multiSelect": true
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+storefront/widgets/oracle/**
+**/*.md
+search/**
+**/*.properties

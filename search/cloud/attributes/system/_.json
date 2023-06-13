@@ -1,0 +1,90 @@
+{
+  "ecr:type" : "attributes-owner-folder",
+  "ecr:createDate" : "2021-04-17T20:35:55.143438Z",
+  "ecr:lastModifiedBy" : "admin",
+  "ecr:lastModified" : "2021-04-17T20:35:55.143438Z",
+  "sku.analytics.availabilityStatus" : {
+    "ecr:type" : "dimension",
+    "mergeAction" : "UPDATE",
+    "ecr:createDate" : "2021-04-17T20:35:55.149304Z",
+    "ecr:lastModifiedBy" : "admin",
+    "ecr:lastModified" : "2021-04-17T20:35:55.149304Z"
+  },
+  "record.urn" : {
+    "propertyDataType" : "ALPHA",
+    "ecr:type" : "property",
+    "isRecordFilterable" : true,
+    "ecr:createDate" : "2021-04-17T20:35:55.144956Z",
+    "ecr:lastModifiedBy" : "admin",
+    "ecr:lastModified" : "2021-04-17T20:35:55.144956Z"
+  },
+  "gs.nullDimension" : {
+    "ecr:type" : "dimension",
+    "isAutogen" : false,
+    "ecr:createDate" : "2021-04-17T20:35:55.148664Z",
+    "ecr:lastModifiedBy" : "admin",
+    "ecr:lastModified" : "2021-04-17T20:35:55.148664Z"
+  },
+  "product.priceRange" : {
+    "mergeAction" : "UPDATE",
+    "ecr:type" : "dimension",
+    "displayConfig" : {
+      "sort" : "rank,desc;alpha,asc"
+    },
+    "ecr:createDate" : "2021-04-17T20:35:55.148183Z",
+    "ecr:lastModifiedBy" : "admin",
+    "ecr:lastModified" : "2021-04-17T20:35:55.148183Z"
+  },
+  "record.collection" : {
+    "propertyDataType" : "ALPHA",
+    "ecr:type" : "property",
+    "isRecordFilterable" : true,
+    "ecr:createDate" : "2021-04-17T20:35:55.145674Z",
+    "ecr:lastModifiedBy" : "admin",
+    "ecr:lastModified" : "2021-04-17T20:35:55.145674Z"
+  },
+  "product.analytics.productType" : {
+    "ecr:type" : "dimension",
+    "mergeAction" : "UPDATE",
+    "ecr:createDate" : "2021-04-17T20:35:55.150549Z",
+    "ecr:lastModifiedBy" : "admin",
+    "ecr:lastModified" : "2021-04-17T20:35:55.150549Z"
+  },
+  "record.locale" : {
+    "ecr:type" : "property",
+    "propertyDataType" : "ALPHA",
+    "isRecordFilterable" : true,
+    "ecr:createDate" : "2021-04-17T20:35:55.146233Z",
+    "ecr:lastModifiedBy" : "admin",
+    "ecr:lastModified" : "2021-04-17T20:35:55.146233Z"
+  },
+  "sku.analytics.onSale" : {
+    "ecr:type" : "dimension",
+    "mergeAction" : "UPDATE",
+    "ecr:createDate" : "2021-04-17T20:35:55.149928Z",
+    "ecr:lastModifiedBy" : "admin",
+    "ecr:lastModified" : "2021-04-17T20:35:55.149928Z"
+  },
+  "product.category" : {
+    "mergeAction" : "UPDATE",
+    "ecr:type" : "dimension",
+    "displayConfig" : {
+      "sort" : "alpha,asc"
+    },
+    "seoConfig" : {
+      "includeInNavLinks" : true,
+      "includeInRecLinks" : false
+    },
+    "ecr:createDate" : "2021-04-17T20:35:55.147494Z",
+    "ecr:lastModifiedBy" : "admin",
+    "ecr:lastModified" : "2021-04-17T20:35:55.147494Z"
+  },
+  "record.id" : {
+    "propertyDataType" : "ALPHA",
+    "ecr:type" : "property",
+    "isRecordFilterable" : true,
+    "ecr:createDate" : "2021-04-17T20:35:55.144302Z",
+    "ecr:lastModifiedBy" : "admin",
+    "ecr:lastModified" : "2021-04-17T20:35:55.144302Z"
+  }
+}

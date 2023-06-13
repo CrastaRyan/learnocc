@@ -1,0 +1,38 @@
+{
+  "contentType" : "Page",
+  "ecr:type" : "page",
+  "contentItem" : {
+    "@type" : "GuidedSearchService",
+    "@appFilterState" : {
+      "@type" : "FilterState",
+      "hiddenNavigationFilter" : "${catalogDimensionValueId}",
+      "recordFilters" : [ "product.active:1", "sku.active:1", "product.catalogId:${catalogId}" ],
+      "rollupKey" : "sku.listingId"
+    },
+    "facets" : {
+      "@type" : "NavigationContainer",
+      "contentPaths" : [ "/content/facets" ]
+    },
+    "breadcrumbs" : {
+      "@type" : "Breadcrumbs"
+    },
+    "results" : {
+      "@type" : "ResultsList",
+      "maxChildRecords" : -1,
+      "recordsPerPage" : 16,
+      "attributes" : [ "product.displayName", "product.primaryFullImageURL", "product.primaryImageAltText", "product.repositoryId", "product.route", "product.x_swatchMapping", "sku.listingFullImageURL", "sku.listingId", "sku.maxActivePrice", "sku.minActivePrice", "sku.repositoryId" ],
+      "childRecordAttributes" : [ "sku.activePrice", "sku.color", "sku.listPrice", "sku.salePrice", "sku.listingFullImageURL" ],
+      "rankingRules" : {
+        "merchRulePaths" : [ "/content/rankingRules" ],
+        "systemRulePaths" : [ "/content/system/rankingRules" ],
+        "systemRuleLimit" : 10
+      }
+    },
+    "searchAdjustments" : {
+      "@type" : "SearchAdjustments"
+    }
+  },
+  "ecr:createDate" : "2021-04-18T13:25:48.436340Z",
+  "ecr:lastModifiedBy" : "6cda68c2-8359-4f39-a795-e2686301fde7",
+  "ecr:lastModified" : "2021-04-18T13:25:48.436340Z"
+}

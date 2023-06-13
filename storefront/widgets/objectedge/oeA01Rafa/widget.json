@@ -1,0 +1,13 @@
+{
+  "name": "oeA01Rafa",
+  "widgetType": "oeA01Rafa",
+  "i18nresources": "oeA01Rafa",
+  "javascript": "oeA01Rafa",
+  "availableToAllPages": true,
+  "global": false,
+  "globalEnabled": false,
+  "version": 1,
+  "jsEditable": true,
+  "imports": [],
+  "config": {}
+}
